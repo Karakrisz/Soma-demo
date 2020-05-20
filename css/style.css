@@ -1,19 +1,13 @@
-body {
-    overflow-x: hidden;
-    /* Prevent scroll on narrow devices */
-}
-
 .p-0 {
     padding: 0;
 }
 
 .orientation {
     background: #b5b5b5;
-    width: 324px;
+    width: 342px;
     height: 50px;
-    position: relative;
-    left: 2px;
     float: left;
+    display: none;
 }
 
 .offcanvas-collapse {
@@ -32,6 +26,7 @@ body {
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
+    z-index: 10000;
 }
 
 .offcanvas-collapse {
@@ -94,6 +89,15 @@ body {
 .nav-underline .active {
     font-weight: 500;
     color: #343a40;
+}
+
+.navbar-toggler:focus {
+    outline: 0px;
+    border-radius: 0;
+}
+
+.logo {
+    width: 50px;
 }
 
 .webPhotos img {
